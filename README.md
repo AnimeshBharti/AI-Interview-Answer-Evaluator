@@ -53,8 +53,6 @@ The system also provides:
 
 ## 🗂 Project Structure
 
-## 📂 Project Structure
-
 ```
 AI-Interview-Answer-Evaluator/
 │
@@ -69,7 +67,7 @@ AI-Interview-Answer-Evaluator/
 ├── README.md               # Project documentation
 ├── .gitignore              # Files and folders ignored by Git
 ├── assets/                 # Images and static files
----
+```
 
 ## ▶ How To Run Locally
 ### 1️⃣ Clone the repository
