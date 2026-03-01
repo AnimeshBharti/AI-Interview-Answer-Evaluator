@@ -65,7 +65,7 @@ AI-Interview-Answer-Evaluator/
 ├── requirements.txt        # Python project dependencies
 ├── README.md               # Project documentation
 ├── .gitignore              # Files and folders ignored by Git
-├── assets/                 # Images and static files
+├── assets                  # Images and static files
 ```
 
 ## ▶ How To Run Locally
