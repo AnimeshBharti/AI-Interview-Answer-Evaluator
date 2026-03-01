@@ -53,16 +53,22 @@ The system also provides:
 
 ## 🗂 Project Structure
 
-Interview-Evaluator/
+## 📂 Project Structure
+
+```
+AI-Interview-Answer-Evaluator/
 │
-├── app.py               # Streamlit frontend application  
-├── llm_evaluator.py     # OpenAI API evaluation logic  
-├── pdf_extractor.py     # PDF parsing and Q&A extraction  
-├── prompt.py            # Prompt template and evaluation rules  
-├── requirements.txt     # Project dependencies  
-├── README.md  
-├── .env                 # Environment variables (not pushed to GitHub)  
-└── assets/              # Images and static files
+├── app.py                  # Streamlit frontend application
+├── streamlit_app.py        # Streamlit UI for answer evaluation
+├── llm_evaluator.py        # LLM/OpenAI API evaluation logic
+├── pdf_extractor.py        # Extracts questions & answers from PDFs
+├── formatter.py            # Formats evaluation output and scoring
+├── prompts.py              # Prompt templates and evaluation rules
+│
+├── requirements.txt        # Python project dependencies
+├── README.md               # Project documentation
+├── .gitignore              # Files and folders ignored by Git
+├── assets/                 # Images and static files
 ---
 
 ## ▶ How To Run Locally
