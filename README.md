@@ -68,8 +68,8 @@ Interview-Evaluator/
 ## ▶ How To Run Locally
 ### 1️⃣ Clone the repository
 ```bash
-git clone <your-repo-link>
-cd Interview-Evaluator
+git clone https://github.com/AnimeshBharti/AI-Interview-Answer-Evaluator.git
+cd AI-Interview-Answer-Evaluator
 ```
 ### 2️⃣ Install dependencies
 ```bash
