@@ -62,7 +62,6 @@ AI-Interview-Answer-Evaluator/
 ├── pdf_extractor.py        # Extracts questions & answers from PDFs
 ├── formatter.py            # Formats evaluation output and scoring
 ├── prompts.py              # Prompt templates and evaluation rules
-│
 ├── requirements.txt        # Python project dependencies
 ├── README.md               # Project documentation
 ├── .gitignore              # Files and folders ignored by Git
