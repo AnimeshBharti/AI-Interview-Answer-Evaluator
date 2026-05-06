@@ -23,22 +23,7 @@ if mode == "Manual Input":
 
             if result:
                 st.subheader("Evaluation Result")
-
-                st.write("### Scores")
-                st.write(result)
-
-                st.write("### Strengths")
-                for point in result["strength"]:
-                    st.write("- ", point)
-
-                st.write("### Weaknesses")
-                for point in result["weakness"]:
-                    st.write("- ", point)
-
-                st.write("### Suggestions")
-                for point in result["suggestions"]:
-                    st.write("- ", point)
-
+                display_result(result)
             else:
                 st.error("Failed to evaluate. Check API response.")
 
@@ -64,21 +49,7 @@ elif mode == "Upload PDF":
 
                 if result:
                     st.subheader(f"Evaluation for Question: {question}")
-
-                    st.write("### Scores")
-                    st.write(result)
-
-                    st.write("### Strengths")
-                    for point in result["strength"]:
-                        st.markdown(f"- {point}")
-
-                    st.write("### Weaknesses")
-                    for point in result["weakness"]:
-                        st.markdown(f"- {point}")
-
-                    st.write("### Suggestions")
-                    for point in result["suggestions"]:
-                        st.markdown(f"- {point}")
+                    display_result(result)
 
                 else:
                    st.error(f"Evaluation failed for question: {question}")

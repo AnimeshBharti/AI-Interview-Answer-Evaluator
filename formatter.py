@@ -1,23 +1,25 @@
+import streamlit as st
+
 def display_result(result):
-    print("\n----Interview Evaluation Result----")
+    st.write("\n----Interview Evaluation Result----")
 
-    print(f"Technical Accuracy: {result['technical_accuracy']}/25")
-    print(f"Clarity: {result['clarity']}/15")
-    print(f"Structure: {result['structure']}/10")
-    print(f"Depth: {result['depth']}/25")
-    print(f"Communication: {result['communication']}/25")
+    st.write(f"Technical Accuracy: {result['technical_accuracy']}/25")
+    st.write(f"Clarity: {result['clarity']}/15")
+    st.write(f"Structure: {result['structure']}/10")
+    st.write(f"Depth: {result['depth']}/25")
+    st.write(f"Communication: {result['communication']}/25")
 
-    print("\nStrengths:")
+    st.write("\nStrengths:")
     for point in result["strength"]:
-        print(f"  - {point}")
+        st.markdown(f"  - {point}")
 
-    print("\nWeaknesses:")
+    st.write("\nWeaknesses:")
     for point in result["weakness"]:
-        print(f"  - {point}")
+        st.markdown(f"  - {point}")
 
-    print("\nSuggestions:")
+    st.write("\nSuggestions:")
     for point in result["suggestions"]:
-        print(f"  - {point}")
+        st.markdown(f"  - {point}")
 
 
-    print(f"\nOverall Interview Score: {result['overall_interview_score']}/100")
+    st.write(f"\nOverall Interview Score: {result['overall_interview_score']}/100")
